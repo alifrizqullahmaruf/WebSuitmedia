@@ -27,7 +27,7 @@ const ListPost = () => {
   ];
 
   return (
-    <div className='w-full bg-white font-medium pt-32'>
+    <div className='w-full pt-32 font-medium bg-white'>
       {/* Filter */}
       <div className="max-w-[1240px] flex justify-between mx-auto">
         {/* Information */}
@@ -36,7 +36,7 @@ const ListPost = () => {
         {/* Filter */}
         <div className="flex gap-8">
           {/* Sort by page */}
-          <div id="page" className="flex gap-2 items-center">
+          <div id="page" className="flex items-center gap-2">
             <p>Show per page:</p>
             <div className="relative">
               <button 
@@ -51,7 +51,7 @@ const ListPost = () => {
                 <IoIosArrowDown />
               </button>
               {showPerPageDropdown && (
-                <div className="absolute mt-1 w-full bg-white rounded-md shadow-lg py-1">
+                <div className="absolute w-full py-1 mt-1 bg-white rounded-md shadow-lg">
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700">10</a>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700">25</a>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700">50</a>
@@ -62,7 +62,7 @@ const ListPost = () => {
           </div>
 
           {/* Sort by */}
-          <div id="sort" className="flex gap-2 items-center">
+          <div id="sort" className="flex items-center gap-2">
             <p>Sort by:</p>
             <div className="relative">
               <button 
@@ -77,7 +77,7 @@ const ListPost = () => {
                 <IoIosArrowDown />
               </button>
               {sortByDropdown && (
-                <div className="absolute mt-1 w-full bg-white rounded-md shadow-lg py-1">
+                <div className="absolute w-full py-1 mt-1 bg-white rounded-md shadow-lg">
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700">Newest</a>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700">Oldest</a>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700">Most Popular</a>
@@ -101,14 +101,16 @@ const ListPost = () => {
       </div>
 
       {/* Filterpage */}
-      <div className="max-w-[1240px] mx-auto flex gap-2 items-center">
+      <div className="max-w-[1240px] mx-auto flex gap-2  mt-16">
+      <div className="flex items-center gap-2 mx-auto">
       <IoIosArrowBack />
-      <p className="px-1 bg-orange-500 rounded">1</p>
-      <p className="px-1 bg-orange-500 rounded">2</p>
-      <p className="px-1 bg-orange-500 rounded">3</p>
-      <p className="px-1 bg-orange-500 rounded">4</p>
-      <p className="px-1 bg-orange-500 rounded">5</p>
+      <p className="px-2 bg-orange-500 rounded">1</p>
+      <p className="px-2 rounded">2</p>
+      <p className="px-2 rounded">3</p>
+      <p className="px-2 rounded">4</p>
+      <p className="px-2 rounded">5</p>
       <IoIosArrowForward />
+      </div>
       </div>
     </div>
   );
